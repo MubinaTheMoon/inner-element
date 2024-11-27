@@ -1,0 +1,176 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #EBEAFF;
+  font-family: "Nunito";
+  font-weight: 400;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+p {
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+/* nunito-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/nunito-v26-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/nunito-v26-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/nunito-v26-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+.hidden-box {
+  display: flex;
+  gap: 3rem;
+  padding-right: 5rem;
+}
+.hidden-box:hover .box .youtube {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.box {
+  position: relative;
+  width: 25rem;
+  height: 30rem;
+  cursor: pointer;
+  text-align: center;
+  background-color: #17153B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 2rem;
+  color: #fff;
+  box-shadow: 0.5rem 0.5rem 1rem #333;
+}
+.box img {
+  width: 20rem;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  padding: 0.5rem;
+}
+.box h4 {
+  color: red;
+}
+.box .youtube {
+  transition: 0.3s;
+  width: 230px;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  border-radius: 0.8rem;
+  color: #000;
+  position: absolute;
+  font-size: 2rem;
+  top: 0;
+  left: 27rem;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fff;
+  box-shadow: 0.5rem 0.5rem 1rem #333;
+  transform: scale(0.5);
+}
+.box .youtube i {
+  font-size: 3rem;
+  color: red;
+}
+.box .youtube:hover .subscribers {
+  opacity: 1;
+  visibility: visible;
+}
+.box .youtube .subscribers {
+  transition: 0.3s;
+  position: absolute;
+  top: 6.7rem;
+  background-color: #fff;
+  box-shadow: 0.5rem 0.5rem 1rem #333;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  opacity: 0;
+  visibility: hidden;
+}
+.box .youtube .subscribers:hover .videos {
+  opacity: 1;
+  visibility: visible;
+}
+.box .youtube .subscribers .videos {
+  transition: 0.3s;
+  position: absolute;
+  top: 5rem;
+  background-color: #fff;
+  box-shadow: 0.5rem 0.5rem 1rem #333;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  opacity: 0;
+  visibility: hidden;
+}
+.box .youtube .subscribers .videos:hover .motiv {
+  opacity: 1;
+  visibility: visible;
+}
+.box .youtube .subscribers .videos .motiv {
+  transition: 0.3s;
+  position: absolute;
+  top: 5rem;
+  background-color: #fff;
+  box-shadow: 0.5rem 0.5rem 1rem #333;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  opacity: 0;
+  visibility: hidden;
+}
+.box .youtube .subscribers .videos .life {
+  width: 15rem;
+  top: 10rem;
+}
+.box .youtube .subscribers .videos .adhd {
+  top: 15rem;
+}/*# sourceMappingURL=main.css.map */

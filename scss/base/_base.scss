@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: #EBEAFF;
+    font-family: 'Nunito';
+    font-weight: 400;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+p{
+    font-weight: 600;
+    font-size: 1.7rem;
+}
